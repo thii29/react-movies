@@ -1,8 +1,21 @@
 # React + Vite
+## Component
+### Class components
+class ClassComponent extends React.Component{
+  render(){
+    return <h2>Class component</h2>
+  }
+}
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+but not recommend
+### Functional Component
+const Component = () => {
+  return <></>
+}
+export default Component
+## Props
+Are the way too pass data from one component to another.
+Props as arguments you pass to a function.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
