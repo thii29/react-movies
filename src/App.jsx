@@ -32,12 +32,12 @@ function App() {
       }
 
       const data = await response.json();
-
       if (data.Response === 'False') {
         setErrorMessage(data.Error || 'Failed to fetch movies');
         setMovieList([]);
         return;
       }
+      console.log('data', data)
       setMovieList(data.results || null);
 
     } catch (error) {
